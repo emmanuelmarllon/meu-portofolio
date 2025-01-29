@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio de Marlon Emanuel</title>
+    <link rel="stylesheet" href="src/style/reset.css" />
+    <link rel="stylesheet" href="src/style/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Marlon</h1>
+      <nav>
+        <button class="hamburger-menu" aria-label="Toggle menu">&#9776;</button>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#bem-vindo">Bem-vindo</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Fale comigo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="bem-vindo">
+        <h1>Bem-vindo ao meu portfólio!</h1>
+        <div class="content">
+          <div class="fih">
+            <h2>Sobre mim</h2>
+            <p class="texto-sobre-mim">
+              Olá, meu nome é Marlon Emanuel e sou estudante de desenvolvimento
+              front-end. Atualmente, estou focado em aprimorar meus
+              conhecimentos em HTML, CSS e JavaScript. O que mais me motiva a
+              seguir essa carreira é minha curiosidade: gosto de entender como
+              as coisas funcionam por trás das interfaces e como a programação
+              torna isso possível.
+            </p>
+          </div>
+          <div class="fih-img">
+            <img src="assets/imagems/Minha foto.jpg" alt="Marlon Emanuel" />
+            <p>
+              Estudante dedicado, com foco em front-end e sempre em busca de
+              novos desafios.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos">
+        <div class="meus-projetos">
+          <h2>Meus Projetos</h2>
+          <p id="descricao-meus-p">
+            Aqui estão alguns dos projetos que desenvolvi e aprendi durante
+            minha jornada como desenvolvedor.
+          </p>
+        </div>
+        <div id="cards">
+          <div class="slide-container">
+            <div class="slide-content">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                      <img
+                        src="assets/imagems/spotfy logo200x200.png"
+                        alt="foto-do-projto#1"
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="name" style="color: #1db954">Spotify</h2>
+                    <p class="description">
+                      Recriei uma versão simples do Spotify utilizando HTML, CSS
+                      e JavaScript. Durante esse projeto, aprendi várias
+                      técnicas avançadas de JavaScript, além de aprimorar muito
+                      minha habilidade com CSS.
+                    </p>
+                    <p class="desf">
+                      Desafios: Um dos maiores desafios foi implementar a
+                      funcionalidade de navegação dinâmica entre as músicas e a
+                      criação de uma interface que fosse agradável de usar, com
+                      um design que se aproximasse do original do Spotify.
+                    </p>
+                    <p class="tech">
+                      Tecnologias utilizadas:
+                      <span style="color: #e44d26">HTML</span>,
+                      <span style="color: #1572b6">CSS</span>,
+                      <span style="color: #f7df1e">JavaScript</span>.
+                    </p>
+                    <p class="periodo">
+                      Este projeto foi desenvolvido durante a
+                      <strong style="color: #1572b6"
+                        >Imersão Frontend da Alura</strong
+                      >, onde pude consolidar meus conhecimentos em
+                      desenvolvimento web.
+                    </p>
+                    <button><a href="#">ver-mais</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--<div id="cards">
+          <div class="slide-container">
+            <div class="slide-content">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                      <img
+                        src="assets/imagems/spotfy logo200x200.png"
+                        alt="foto-do-projto#1"
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="name" style="color: #1db954">Spotify</h2>
+                    <p class="description">
+                      Recriei uma versão simples do Spotify utilizando HTML, CSS
+                      e JavaScript. Durante esse projeto, aprendi várias
+                      técnicas avançadas de JavaScript, além de aprimorar muito
+                      minha habilidade com CSS.
+                    </p>
+                    <p class="desf">
+                      Desafios: Um dos maiores desafios foi implementar a
+                      funcionalidade de navegação dinâmica entre as músicas e a
+                      criação de uma interface que fosse agradável de usar, com
+                      um design que se aproximasse do original do Spotify.
+                    </p>
+                    <p class="tech">
+                      Tecnologias utilizadas:
+                      <span style="color: #e44d26">HTML</span>,
+                      <span style="color: #1572b6">CSS</span>,
+                      <span style="color: #f7df1e">JavaScript</span>.
+                    </p>
+                    <p class="periodo">
+                      Este projeto foi desenvolvido durante a
+                      <strong style="color: #1572b6"
+                        >Imersão Frontend da Alura</strong
+                      >, onde pude consolidar meus conhecimentos em
+                      desenvolvimento web.
+                    </p>
+                    <button><a href="#">ver-mais</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      --></section>
+      <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo para discutir oportunidades ou projetos!</p>
+        <p>Você pode me encontrar nas seguintes redes sociais:</p>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/marlon-emanuel" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/marlon-emanuel" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/marlon_emanuel" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li><a href="mailto:marlon@exemplo.com">Email</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="src/javascript/script.js"></script>
+  </body>
+</html>

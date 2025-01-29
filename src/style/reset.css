@@ -1,0 +1,69 @@
+/* Reset básico */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Removendo estilos padrões de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remover links sublinhados */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remover bordas de botões e inputs */
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Definindo altura e largura mínimas e máximas para garantir responsividade */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Ajustando a estrutura básica de alguns elementos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica", sans-serif;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* Ajuste nas imagens e fontes */
+img {
+  display: block;
+}
