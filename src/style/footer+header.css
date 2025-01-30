@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* Cabeçalho */
+header {
+  background-image: linear-gradient(to top, var(--cor-6), black);
+  color: white;
+  padding: 1rem 1rem 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 0 15px black;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin-top: 1rem;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: var(--cor-2);
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* Efeitos de hover para links no menu */
+header nav ul li a:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid var(--cor-3);
+  box-shadow: 0 0 10px var(--cor-2);
+  color: var(--cor-5);
+  padding: 10px;
+}
+/* Seção Contato */
+#contato {
+  padding: 2rem;
+  background-image: linear-gradient(to top, black, var(--cor-6));
+  color: white;
+  text-align: center;
+}
+#contato ul li a {
+  transition: color 0.5s ease, text-decoration 0.5s ease;
+}
+#contato ul li a:hover {
+  color: var(--cor-2);
+  text-decoration: underline;
+}
+#contato h2 {
+  width: max-content;
+  font-weight: bolder;
+  text-decoration: underline;
+  margin: 0 auto;
+  text-underline-offset: 4px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 10%,
+    transparent
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  text-decoration: none;
+  font-weight: bolder;
+}

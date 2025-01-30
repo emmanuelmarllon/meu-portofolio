@@ -1,0 +1,122 @@
+/* Menu e Navegação (Hambúrguer) */
+.hamburger-menu {
+  display: none; /* Inicialmente escondido */
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilo do menu (ul) para dispositivos móveis */
+.menu {
+  display: flex;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.menu li {
+  margin: 0 1rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--cor-2);
+}
+
+@media (max-width: 768px) {
+  /* Esconder o menu (ul) em telas pequenas */
+  .menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Mostrar o botão hambúrguer */
+  .hamburger-menu {
+    display: block;
+    margin-right: auto;
+  }
+
+  /* Mostrar o menu quando o botão for clicado */
+  .menu.active {
+    display: flex;
+  }
+}
+
+/* Seções */
+section {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.459);
+}
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .menu {
+    display: flex; /* Ajuste para que o menu use flex */
+    flex-direction: column; /* Itens em coluna */
+    height: 0; /* Altura inicial do menu é zero */
+    overflow: hidden; /* Esconde os itens do menu */
+    transition: height 0.5s ease-in-out; /* Suaviza a transição da altura */
+  }
+
+  /* Quando o menu estiver ativo, expande a altura */
+  .menu.active {
+    height: 16rem; /* Defina um valor adequado para a altura do menu */
+  }
+  .menu {
+    gap: 30px;
+    font-size: 20px;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .fih-img {
+    order: 1;
+    text-align: center;
+  }
+
+  .fih {
+    text-align: center;
+  }
+  header nav {
+    flex-direction: column;
+  }
+  header nav ul {
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 0.5rem 0;
+    padding-top: 7px;
+  }
+
+  .fih p {
+    text-align: center;
+  }
+
+  /* Ajustes para os cards */
+  #cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Media Queries para telas maiores que celulares */
+@media (min-width: 769px) {
+  header nav ul li a {
+    transition: color 0.8s ease, background-color 0.8s ease, padding 0.3s ease;
+  }
+  .card {
+    transition: transform 1s ease, margin 1s ease;
+  }
+  .card:hover {
+    transform: scale(1.03);
+    margin: 5% 0;
+  }
+}

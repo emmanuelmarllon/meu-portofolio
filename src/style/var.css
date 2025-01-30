@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: Rauph-Lauren;
+  src: url("../../assets/fontes/Ralph-Lauren-Font.zip");
+}
+:root {
+  --cor-1: #ffffff; /* Mais clara */
+  --cor-2: #87abd5;
+  --cor-3: #4f7aaa;
+  --cor-4: #265080;
+  --cor-5: #0b2e55;
+  --cor-6: #001a38; /* Mais escura */
+  --cor-fundo: #f4f4f4;
+  --cor-texto: #333;
+  --cor-link-hover: #f4f4f4;
+}
