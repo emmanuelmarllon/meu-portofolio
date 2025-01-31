@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clonefy é uma recriação visual do Spotify usando HTML, CSS, JavaScript e React. Confira o código e o site do projeto."
+    />
+    <title>Clonefy - Detalhes do Projeto</title>
+    <link rel="stylesheet" href="/src/style/reset.css" />
+    <link rel="stylesheet" href="/src/style/Styleg.css" />
+    <link rel="stylesheet" href="/src/style/mediaq.css" />
+    <link rel="stylesheet" href="/src/style/var.css" />
+    <link rel="stylesheet" href="/src/style/footer+header.css" />
+    <style>
+      header h1 {
+        margin: 20px auto;
+      }
+      
+      main h1,
+      main h2 {
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      header h1,
+      main h1,
+      main h2 {
+        font-size: 2em;
+      }
+      main h1 {
+        width: max-content;
+        margin: 0 auto;
+        text-shadow: 2px 2px black;
+      }
+      p {
+        text-align: center;
+        margin: 50px 10%;
+      }
+      section {
+        box-shadow: none;
+      }
+      body {
+        background-color: #121212;
+        color: white;
+      }
+      img {
+        margin: 30px auto;
+        width: 70%;
+        border: 3px solid var(--cor-1);
+      }
+      ul li {
+        text-align: justify;
+        margin: 10px 30px;
+      }
+      a.github-link,
+      a.site-link {
+        margin: auto;
+        border: 1px solid;
+        padding: 10px;
+      }
+      a.github-link:hover,
+      a.site-link:hover {
+        background-color: var(--cor-4);
+        box-shadow: 0 0 11px rgb(0, 140, 255);
+        transition: all 0.3s ease;
+      }
+      section {
+        margin: 90px 0;
+      }
+      footer ul li {
+        margin: 0 auto;
+        text-align: center;
+      }
+      .project-repository a {
+        width: 1000px;
+        background-color: #e34f26;
+        margin: 0 auto;
+      }
+      .mobile-warning h2 {
+        margin: 0 auto;
+        color: red;
+        width: max-content;
+        text-shadow: 0px 0px 5px rgb(247, 108, 108);
+      }
+      /* Responsiveness */
+      @media (max-width: 768px) {
+        .project-repository a {
+          width: 100%;
+        }
+        img {
+          width: 70%;
+        }
+        p {
+          margin: 50px 5%;
+        }
+        .menu.active {
+          height: 20.5rem; /* Defina um valor adequado para a altura do menu */
+        }
+      }
+      a.github-link,
+      a.site-link {
+        font-size: 16px; /* Ajuste o tamanho da fonte para o valor desejado */
+        padding: 10px 20px; /* Controle o tamanho com padding também */
+        width: auto; /* Defina o tamanho da largura como automático */
+        height: auto; /* Defina a altura como automática */
+        display: inline-block; /* Garantir que o link se ajuste ao conteúdo */
+        background-color: #1db954;
+        text-shadow: 1px 1px black;
+        box-shadow: 0 0 10px rgb(0, 255, 0);
+      }
+      @media (min-width:768px) {
+        .future-improvements ul li, .tech-stack ul li {
+          background-color: #11612d;
+          width: max-content;
+          margin: 10px auto;
+          text-align: center;
+          padding: 10px;
+          border-radius: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Marlon</h1>
+      <nav>
+        <button class="hamburger-menu" aria-label="Toggle menu">&#9776;</button>
+        <ul class="menu">
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="#project-details">Detalhes do projeto</a></li>
+          <li><a href="#tech-stack">Tecnologias usadas</a></li>
+          <li><a href="#project-repository">Acesse aqui</a></li>
+          <li><a href="#contato">contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="project-details" class="project-details"></section>
+        <h1 style="color: #1db954">Clonefy - Recriação Visual do Spotify</h1>
+        <p class="intro">
+          Clonefy é uma recriação visual do Spotify, desenvolvida com HTML, CSS,
+          JavaScript e React. O projeto faz parte de um desafio proposto na
+          <span style="color: #1572b6; font-weight: bolder"
+            >Imersão Frontend da Alura</span
+          >, onde o objetivo era criar o front-end da plataforma.
+        </p>
+        <hr />
+        <section class="screenshot-gallery">
+          <h2>Capturas de Tela</h2>
+          <div class="gallery">
+            <img
+              src="assets/pag-inicial-clonefy.PNG"
+              alt="Tela principal do Clonefy"
+            />
+            <img
+              src="assets/pag-inicial-clonefy-pesquisa.PNG"
+              alt="Página de resultados da busca"
+            />
+          </div>
+        </section>
+        <hr />
+        <section class="tech-stack" id="tech-stack">
+          <h2>Tecnologias Utilizadas</h2>
+          <ul>
+            <li>
+              <strong style="color: #e34f26">HTML</strong> - Estruturação do
+              layout do projeto, com ênfase na responsividade.
+            </li>
+            <li>
+              <strong style="color: #1572b6">CSS</strong> - Estilização
+              avançada, criando uma interface semelhante ao Spotify.
+            </li>
+            <li>
+              <strong style="color: #f7df1e">JavaScript</strong> - Manipulação
+              do DOM e lógica por trás da interface.
+            </li>
+            <li>
+              <strong style="color: #61dafb">React</strong> - Aprendizado na
+              criação de componentes reutilizáveis e gerenciamento de estado.
+            </li>
+            <li>
+              <strong style="color: #ff5733">API de Busca</strong> - Integração
+              de API para pesquisar músicas, artistas e álbuns.
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section class="challenges-learnings">
+          <h2>Desafios e Aprendizados</h2>
+          <p>
+            Este projeto foi o meu primeiro contato com o React, e confesso que
+            enfrentei várias dificuldades. Porém, o suporte da comunidade da
+            Alura foi essencial para superar esses obstáculos, especialmente
+            quando eu tinha dúvidas no processo de aprendizado. Além disso, o
+            maior desafio foi lidar com a manipulação do estado no React e
+            integrar isso com o HTML/CSS de forma fluida.
+          </p>
+          <p>
+            Aprendi bastante sobre a utilização de APIs para fazer a busca de
+            músicas, artistas e álbuns, além de aprimorar minhas habilidades em
+            JavaScript, que eu já tinha algum conhecimento, mas nunca havia
+            aplicado de forma tão prática e profunda. A experiência com React
+            foi marcante, e posso dizer que agora estou muito mais confortável
+            com essa tecnologia.
+          </p>
+        </section>
+        <hr />
+        <section class="future-improvements">
+          <h2>Melhorias Futuros</h2>
+          <p>
+            Algumas funcionalidades que eu planejo adicionar no futuro incluem:
+          </p>
+          <ul>
+            <li>
+              Possibilidade de clicar em um artista e ser redirecionado ao seu
+              perfil no Spotify.
+            </li>
+            <li>
+              Adição de reprodução de músicas diretamente no clone, com
+              controles de play/pause.
+            </li>
+            <li>
+              Versão responsiva para dispositivos móveis, garantindo melhor
+              experiência.
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section class="project-repository" id="project-repository">
+          <h2>Veja o Código</h2>
+          <p>
+            O código completo do projeto está disponível no meu repositório no
+            GitHub. Acesse o link abaixo para conferir o código-fonte, aprender
+            mais sobre a estrutura do projeto ou até mesmo contribuir com
+            melhorias.
+          </p>
+          <p>
+            <a
+              href="https://github.com/emmanuelmarllon/Clonefy"
+              target="_blank"
+              class="github-link"
+              >Acessar Repositório no GitHub</a
+            >
+          </p>
+          <h2>Site</h2>
+          <p>Ou se você quiser ver o site, clique no link abaixo:</p>
+          <p>
+            <a href="https://seusite.com" target="_blank" class="site-link"
+              >Acessar o Site</a
+            >
+          </p>
+        </section>
+        <hr />
+        <section style="margin-bottom: 0px" class="mobile-warning">
+          <h2
+            style="
+              margin: 0 auto;
+              color: red;
+              width: max-content;
+              text-shadow: 0px 0px 5px rgb(247, 108, 108);
+            "
+          >
+            Atenção
+          </h2>
+          <p>
+            A versão mobile ainda não foi implementada neste projeto. Portanto,
+            se você acessar o Clonefy em um dispositivo com resolução menor que
+            720px, o layout poderá apresentar alguns problemas de exibição.
+            Estamos trabalhando para implementar uma versão responsiva em breve!
+          </p>
+        </section>
+      </section>
+    </main>
+    <footer id="contato" style="margin: 0px">
+      <h2>Contato</h2>
+      <p style="margin: 0px">
+        Entre em contato comigo para discutir oportunidades ou projetos!
+      </p>
+      <p style="margin: 0px">
+        Você pode me encontrar nas seguintes redes sociais:
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/marlllonemanuel/" target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/emmanuelmarllon" target="_blank"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com/emmanuelmarllon/" target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a href="mailto:marllonemanuel25@gmail.com" target="_blank">E-mail</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="../../src/javascript/script.js"></script>
+  </body>
+</html>
