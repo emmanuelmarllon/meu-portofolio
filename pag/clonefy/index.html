@@ -26,18 +26,21 @@
         margin-bottom: 20px;
       }
       header h1,
-      main h1,
-      main h2 {
-        font-size: 2em;
+      main h1 {
+        font-size: 2.5em;
       }
       main h1 {
         width: max-content;
         margin: 0 auto;
         text-shadow: 2px 2px black;
       }
+      main h2 {
+        font-size: 1.8rem;
+      }
       p {
         text-align: center;
         margin: 50px 10%;
+        font-size: 1.2rem;
       }
       section {
         box-shadow: none;
@@ -50,6 +53,8 @@
         margin: 30px auto;
         width: 70%;
         border: 3px solid var(--cor-1);
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgb(0, 204, 255);
       }
       iframe {
         width: 70vh;
@@ -98,6 +103,9 @@
         color: red;
         width: max-content;
         text-shadow: 0px 0px 5px rgb(247, 108, 108);
+      }
+      main h2 {
+        font-size: 2rem;
       }
       /* Responsiveness */
       @media (max-width: 768px) {
@@ -212,7 +220,7 @@
             maior desafio foi lidar com a manipulação do estado no React e
             integrar isso com o HTML/CSS de forma fluida.
           </p>
-          <h2 class="name" style="color: #1db954">Pesquisa local e pesquisa remota</h2>
+          <h2 class="name" style="color: #1db954; font-size: 1.8rem;" >Pesquisa local e pesquisa remota</h2>
     <p class="detailed-challenge">
         um dos outro desafio foi fazer com que o sistema de pesquisa, 
         inicialmente projetado para funcionar apenas localmente, fosse acessível em outros dispositivos. 
@@ -281,6 +289,7 @@
               color: red;
               width: max-content;
               text-shadow: 0px 0px 5px rgb(247, 108, 108);
+              font-size: 2rem;
             "
           >
             Atenção
