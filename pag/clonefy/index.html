@@ -51,6 +51,18 @@
         width: 70%;
         border: 3px solid var(--cor-1);
       }
+      iframe {
+        width: 700px;
+        height: 400px;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: #11612d;
+        border-radius: 30px;
+      }
+      .iframe {
+        display: flex;
+        margin: 0 10;
+      }
       ul li {
         text-align: justify;
         margin: 10px 30px;
@@ -199,14 +211,20 @@
             maior desafio foi lidar com a manipulação do estado no React e
             integrar isso com o HTML/CSS de forma fluida.
           </p>
-          <p>
-            Aprendi bastante sobre a utilização de APIs para fazer a busca de
-            músicas, artistas e álbuns, além de aprimorar minhas habilidades em
-            JavaScript, que eu já tinha algum conhecimento, mas nunca havia
-            aplicado de forma tão prática e profunda. A experiência com React
-            foi marcante, e posso dizer que agora estou muito mais confortável
-            com essa tecnologia.
-          </p>
+          <h2 class="name" style="color: #1db954">Pesquisa local e pesquisa remota</h2>
+    <p class="detailed-challenge">
+        um dos outro desafio foi fazer com que o sistema de pesquisa, 
+        inicialmente projetado para funcionar apenas localmente, fosse acessível em outros dispositivos. 
+        Esse requisito não foi ensinado durante a <span style="color: #1572b6; font-weight: bolder;">Imersão Frontend da Alura</span>, então precisei pesquisar e aprender por conta própria 
+        como lidar com a implementação de uma pesquisa baseada em API que funcionasse além do ambiente local.
+    </p>
+    <div class="iframe"><iframe width="1863" height="803" src="https://www.youtube.com/embed/AvkEHatQYUQ" title="Mocks de APIs REST com o MockAPI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <p class="detailed-solution">
+        A solução envolveu aprender sobre como configurar o backend (API) 
+        para permitir acessos externos. No início, o sistema de pesquisa funcionava apenas localmente, mas ao entender as 
+        limitações do navegador e como lidar com requisições externas, consegui ajustar o código para que qualquer usuário, 
+        de qualquer dispositivo, pudesse acessar a busca sem erros.
+    </p>
         </section>
         <hr />
         <section class="future-improvements">
