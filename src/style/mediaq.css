@@ -61,7 +61,7 @@ section {
 
   /* Quando o menu estiver ativo, expande a altura */
   .menu.active {
-    height: 16rem; /* Defina um valor adequado para a altura do menu */
+    height: 11.7rem; /* Defina um valor adequado para a altura do menu */
   }
   .menu {
     gap: 30px;
